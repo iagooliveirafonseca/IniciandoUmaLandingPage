@@ -1,0 +1,193 @@
+/*=======================GLOBAL=====================*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    font-size: 62.5%; /* 1rem = 10px */
+  
+    --Bright_Red: hsl(12, 88%, 59%);
+    --Dark_Blue: hsl(228, 39%, 23%);
+    --Dark_Grayish_Blue: hsl(227, 12%, 61%);
+    --Very_Dark_Blue: hsl(233, 12%, 13%);
+    --Very_Pale_Red: hsl(13, 100%, 96%);
+    --Vary_Light_Gray: hsl(0, 0%, 98%);
+  
+    /*
+    FONTS
+    .be-vietnam pro-regular {
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+    .be-vietnam pro-medium {
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+    .be-vietnam pro-bold {
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  */
+  }
+  
+  /*=======================BODY=====================*/
+  html,
+  body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/bg-simplify-section-mobile.svg");
+  }
+  
+  /*=======================WRAPPER=====================*/
+  .wrapper {
+    width: min(50rem, 100%);
+    margin-inline: auto;
+    padding-inline: 2rem;
+    background-color: white;
+  }
+
+  /*=======================HEADER=====================*/
+
+  header .wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-block: 5rem;
+    position: relative;
+  }
+
+  header .logo img{
+    width: 12rem;
+  }
+
+  header a button{
+    display: none;
+    width: 11rem;
+    height: 4rem;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    background-color: var(--Bright_Red);
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  header .mobileMenu{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: min(37rem, 90%);
+    height: 25rem;
+    background-color: cadetblue;
+    gap: 1.5rem;
+    transform: translateY(-100%);
+    transition: transform ease 1s;
+
+    
+    
+  }
+
+  .wrapper .mobileMenuOpen{
+    transform: translateY(60%);
+  }
+
+  header .mobileMenu li{
+    list-style: none;
+  }
+
+  .mobileMenu li a{
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: white;
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--Dark_Blue);
+  }
+
+  .mobileMenu li a:hover{
+    color:black;
+  }
+
+  header .hamburguerIcons .iconOpen{
+  height: 2.3rem;
+  width: 2.5rem;
+  }
+
+  header .hamburguerIcons .iconClose{
+    display: none;
+  }
+
+  header .hamburguerIcons .iconCloseShow{
+    display: flex;
+    width: 2.5rem;
+  }
+
+  header .hamburguerIcons .iconOpenDontShow{
+    display: none;
+  }
+
+    /*=======================INTRODUCTION=====================*/
+
+ .introduction .wrapper{
+ display: grid;
+ grid-template-areas: 
+ "B"
+ "A";
+}
+
+.introduction .wrapper div{
+  width: min(50rem,100%);
+}
+
+
+.introduction .wrapper .introductionContent{
+text-align: center;
+grid-area: A;
+
+}
+
+.wrapper .introductionContent h1{
+  font-size: 3.9rem;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: var(--Dark_Blue);
+}
+
+.wrapper .introductionContent p{
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.8rem;
+  color: var(--Dark_Grayish_Blue);
+  opacity: 0.7;
+  margin-top: 2rem;
+}
+
+.introduction .wrapper .introductionImg{
+grid-area: B;
+
+}
+
+.wrapper .introductionImg img{
+  display: block;
+  margin: auto;
+  width: min(50rem,100%);
+}
+
+
+
