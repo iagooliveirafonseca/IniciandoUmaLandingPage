@@ -51,7 +51,7 @@
     width: min(50rem, 100%);
     margin-inline: auto;
     padding-inline: 2rem;
-    background-color: white;
+    
   }
 
   /*=======================HEADER=====================*/
@@ -140,7 +140,7 @@
     display: none;
   }
 
-    /*=======================INTRODUCTION=====================*/
+  /*=======================INTRODUCTION=====================*/
 
  .introduction .wrapper{
  display: grid;
@@ -172,10 +172,27 @@ grid-area: A;
   font-family: "Be Vietnam Pro", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   color: var(--Dark_Grayish_Blue);
   opacity: 0.7;
-  margin-top: 2rem;
+  margin-block: 2rem;
+  line-height: 3rem;
+
+ 
+}
+
+.wrapper .introductionContent button{
+  width: 15rem;
+  height: 4rem;
+  font-size: 1.3rem;
+  border-radius: 20px;
+  background-color: var(--Bright_Red);
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
 
 .introduction .wrapper .introductionImg{
@@ -189,5 +206,262 @@ grid-area: B;
   width: min(50rem,100%);
 }
 
+  /*=======================ASIDEMAIN=====================*/
+.asideMain{
+  display: grid;
+  grid-template-areas: 
+  "A"
+  "B";
+}
 
+.asideMain aside{
+  grid-area: A;
+}
 
+.asideMain main{
+  margin-top: 4rem;
+  grid-area: B;
+}
+
+.wrapper .asideContent h1{
+  margin-top: 6rem;
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 700;
+  font-style:normal;
+  color: var(--Dark_Blue);
+}
+
+.wrapper .asideContent p{
+  text-align: center;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+  color: var(--Dark_Grayish_Blue);
+  opacity: 0.7;
+  margin-block: 2rem;
+  line-height: 3rem;
+
+ 
+}
+
+.mainContent span{
+  width: 105%;
+  background-color: var(--Very_Pale_Red);
+  display: flex;
+  align-items: center;
+  border-radius:20px 0px 0px 20px ;
+}
+
+.mainContent span h6{
+  color: #FFFFFF;
+  text-align: center;
+  width: 6rem;
+  padding-block: 1rem;
+  border-radius: 20px;
+  background-color: var(--Bright_Red);
+  font-size: 1.7rem;
+}
+
+.mainContent span p{
+  font-size: 1.5rem;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 700;
+  font-style:normal;
+  color: var(--Dark_Blue);
+  margin-left: 2rem;
+}
+
+.mainContent .paragraph{
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.4rem;
+  color: var(--Dark_Grayish_Blue);
+  opacity: 0.7;
+  margin-block: 2rem;
+  line-height: 3rem;
+}
+
+  /*=======================SECTION=====================*/
+  section .wrapper{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+  }
+  section .wrapper h1{
+    font-size: 3rem;
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--Dark_Blue);
+    text-align: center;
+  }
+
+  .wrapper .carrouselContents img{
+    display: block;
+    margin: auto;
+    width: 6rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+  }
+
+  .wrapper .carrouselContents h3{
+    font-size: 1.3rem;
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 700;
+    font-style:normal;
+    color: var(--Dark_Blue);
+    text-align: center;
+  }
+
+  .wrapper .carrouselContents p{
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.4rem;
+    padding-inline: 2rem;
+    color: var(--Dark_Grayish_Blue);
+    opacity: 0.7;
+    margin-block: 2rem;
+    line-height: 3rem;
+    text-align: center;
+  }
+
+  section .wrapper button{
+    width: 15rem;
+    height: 4rem;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    background-color: var(--Bright_Red);
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-block: 4rem;
+  }
+
+  /*=======================HEADER=====================*/
+  article{
+    background-color: var(--Bright_Red);
+
+  }
+  article .wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-block: 2rem;
+  }
+
+  article .wrapper h1{
+    margin-top: 6rem;
+    text-align: center;
+    font-size: 3.9rem;
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 700;
+    font-style:normal;
+    color: #FFFFFF;
+    padding-inline:1rem;
+  }
+
+  article .wrapper button{
+    width: 15rem;
+    height: 4rem;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    background-color:#FFFFFF;
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--Bright_Red);
+    border: none;
+    cursor: pointer;
+    margin-block: 4rem;
+  }
+
+   /*=======================FOOTER=====================*/
+  footer{
+    background-color: var(--Very_Dark_Blue);
+  }
+
+  footer .wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+  .wrapper .emailInput input{
+    margin-top: 5rem;
+    width: 25rem;
+    height: 4rem;
+    padding-left: 2rem;
+    border-radius: 20px;
+    border: none;
+    margin-right: 0.5rem;
+  }
+
+  .wrapper .emailInput button{
+    width: 8rem;
+    height: 4rem;
+    border-radius: 20px;
+    background-color:var(--Bright_Red);
+    border: none;
+    color: white;
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  footer .wrapper .footerLinks{
+    margin-top: 3rem;
+    width: min(50rem, 100%);
+    display: flex;
+    justify-content: space-evenly;
+    gap: 4rem;
+  }
+
+ .footerLinks ol a{
+  text-decoration: none;
+  color: #FFFFFF;
+ }
+
+ ol a li{
+  list-style: none;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.4rem;
+  margin-top: 2rem;
+}
+
+footer .wrapper .socialLinks{
+  display: flex;
+  gap: 3rem;
+  margin-block: 5rem;
+}
+
+.socialLinks a img{
+  width: 4rem;
+}
+
+footer .wrapper .footerLogo{
+  width: 18rem;
+  margin-bottom: 4rem;
+}
+
+footer .wrapper p{
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.4rem;
+  margin-top: 2rem;
+  color: #FFFFFF;
+  opacity: 0.7;
+  margin-bottom: 4rem;
+}
